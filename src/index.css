@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    scroll-padding-top: 5.5rem; /* keeps anchored headings and form errors clear of the sticky header */
+  }
+  body {
+    @apply bg-ivory text-ink font-sans antialiased;
+    font-size: clamp(1rem, 0.96rem + 0.18vw, 1.0625rem);
+    line-height: 1.65;
+    text-rendering: optimizeLegibility;
+  }
+  h1, h2, h3, h4 { @apply font-serif text-ink; font-optical-sizing: auto; text-wrap: balance; }
+  p { text-wrap: pretty; }
+  :focus-visible { outline: 2px solid #273056; outline-offset: 3px; border-radius: 2px; }
+  .on-dark :focus-visible { outline-color: #F7F3EA; }
+  ::selection { background: #F3E9C9; }
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+  }
+}
+
+@layer components {
+  .container-x { @apply mx-auto w-full max-w-content px-4 sm:px-6 lg:px-10; }
+  .section-y { @apply py-16 sm:py-20 lg:py-28; }
+
+  .eyebrow {
+    @apply inline-flex items-center gap-3 font-sans text-xs font-semibold uppercase tracking-[0.16em] text-navy;
+  }
+  .eyebrow::before { content: ''; @apply block h-px w-8 bg-gold; }
+  .on-dark .eyebrow { @apply text-gold-soft; }
+
+  .btn {
+    @apply inline-flex min-h-[48px] items-center justify-center gap-2 rounded-soft px-6 py-3 text-[0.95rem] font-semibold leading-tight transition-colors duration-200 disabled:cursor-not-allowed disabled:opacity-60;
+  }
+  .btn-primary { @apply btn bg-navy text-ivory hover:bg-navy-dark; }
+  .btn-secondary { @apply btn border border-navy/70 bg-transparent text-navy hover:bg-navy hover:text-ivory; }
+  .btn-light { @apply btn bg-ivory text-navy hover:bg-paper; }
+  .btn-outline-light { @apply btn border border-ivory/60 text-ivory hover:bg-ivory hover:text-navy; }
+
+  .link {
+    @apply font-semibold text-navy underline decoration-gold decoration-[1.5px] underline-offset-[5px] transition-colors hover:decoration-navy;
+  }
+  .on-dark .link { @apply text-ivory decoration-gold hover:decoration-ivory; }
+
+  .field-label { @apply mb-1.5 block text-sm font-semibold text-ink; }
+  .field {
+    @apply block min-h-[48px] w-full rounded-soft border border-ink/25 bg-paper px-3.5 py-2.5 text-base text-ink placeholder:text-ink-soft/70 transition-colors focus:border-navy focus:outline-none focus:ring-2 focus:ring-navy/25 aria-[invalid=true]:border-danger;
+  }
+  .rule { @apply border-t border-line; }
+
+  /* Placeholder frame texture: woven linen, clearly not a photograph */
+  .linen {
+    background-color: #EFE8DA;
+    background-image:
+      repeating-linear-gradient(0deg, rgba(39,48,86,0.035) 0 1px, transparent 1px 4px),
+      repeating-linear-gradient(90deg, rgba(39,48,86,0.035) 0 1px, transparent 1px 4px);
+  }
+}
+
+@layer utilities {
+  .pb-safe { padding-bottom: max(0.75rem, env(safe-area-inset-bottom)); }
+  .tabular { font-variant-numeric: tabular-nums; }
+}
