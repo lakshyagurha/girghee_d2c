@@ -1,0 +1,14 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
+
+# Single-page app: serve index.html for every route so deep links like /shop/gheeji-a2-ghee work.
+# /.netlify/functions/* is handled before redirects and is unaffected.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

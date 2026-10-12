@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { Outlet, useLocation, useNavigationType } from 'react-router-dom';
-import { brand } from '../content/brand';
+import { brand, integrations } from '../content/brand';
 import { useCart } from '../lib/cart';
 import { CartDrawer } from './CartDrawer';
 import { Footer } from './Footer';
@@ -29,7 +29,7 @@ export function Layout() {
       <ScrollManager />
       {brand.prototype && (
         <div className="bg-sand text-center text-[0.8rem] leading-snug text-navy">
-          <p className="container-x py-2"><strong className="font-semibold">Prototype preview.</strong> Products, prices and copy are samples. No orders, payments or enquiries are sent.</p>
+          <p className="container-x py-2"><strong className="font-semibold">Prototype preview.</strong> Products, prices and copy are samples. {integrations.checkout.testMode ? 'Payments run in Razorpay test mode, so no real money is charged.' : 'No orders or payments are taken.'} Enquiries are not sent.</p>
         </div>
       )}
       <Header />

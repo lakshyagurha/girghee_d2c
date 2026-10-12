@@ -16,7 +16,7 @@ beforeEach(() => {
   Element.prototype.scrollIntoView = vi.fn();
 });
 
-describe('Journey A: home → size → quantity → cart → edit → demo checkout', () => {
+describe('Journey A: home → size → quantity → cart → edit → checkout', () => {
   it('works end to end', async () => {
     const user = userEvent.setup();
     const router = renderAt('/');
@@ -56,12 +56,18 @@ describe('Journey A: home → size → quantity → cart → edit → demo check
     expect(screen.queryByRole('dialog', { name: /your cart/i })).not.toBeInTheDocument();
     expect(addBtn).toHaveFocus();
 
-    // Reopen, go to demo checkout
+    // Reopen, go to checkout (Razorpay test mode)
     await user.click(screen.getByRole('button', { name: /cart, 3 items/i }));
-    await user.click(screen.getByRole('button', { name: /review order \(demo\)/i }));
+    await user.click(screen.getByRole('button', { name: /^checkout$/i }));
     expect(router.state.location.pathname).toBe('/checkout');
-    expect(screen.getByText(/no order or payment is being placed/i)).toBeInTheDocument();
-    expect(screen.getByRole('button', { name: /payment not connected/i })).toBeDisabled();
+    expect(screen.getByText(/razorpay test mode/i, { selector: 'p.font-semibold' })).toBeInTheDocument();
+
+    // Paying with empty delivery details shows errors and never calls the server
+    const fetchSpy = vi.spyOn(globalThis, 'fetch');
+    await user.click(screen.getByRole('button', { name: /^pay /i }));
+    expect(screen.getByRole('alert')).toHaveTextContent(/please check 7 fields/i);
+    expect(fetchSpy).not.toHaveBeenCalled();
+    fetchSpy.mockRestore();
 
     // Remove → empty state
     await user.click(screen.getByRole('button', { name: /remove gheeji a2 ghee 500 ml/i }));

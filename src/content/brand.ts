@@ -50,7 +50,8 @@ export const social: { label: string; href: string | null }[] = [
  * `endpoint` should be a public form endpoint or your own server route, never a secret key.
  */
 export const integrations = {
-  checkout: { connected: false, provider: null as string | null },
+  /** Razorpay via Netlify Functions (netlify/functions). Keys live in Netlify env vars, not here. */
+  checkout: { connected: true, provider: 'razorpay' as string | null, testMode: true },
   quoteForm: { connected: false, endpoint: null as string | null },
   contactForm: { connected: false, endpoint: null as string | null },
 };
