@@ -4,7 +4,7 @@ import { getGiftById, giftBoxes } from '../content/gifts';
 import type { ImageId } from '../content/images';
 
 export const MAX_QTY = 20;
-const STORAGE_KEY = 'gheeji.cart.v1';
+const STORAGE_KEY = 'gheeculture.cart.v1';
 
 /** Only product references and quantities are stored — never prices or personal data. */
 export type CartLine =

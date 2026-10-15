@@ -24,8 +24,8 @@ export interface GiftBox {
   status: 'draft' | 'approved';
 }
 
-const ghee200: GiftItem = { name: 'Gheeji A2 Ghee', quantity: 1, pack: { value: 200, unit: 'ml' } };
-const ghee500: GiftItem = { name: 'Gheeji A2 Ghee', quantity: 1, pack: { value: 500, unit: 'ml' } };
+const ghee200: GiftItem = { name: 'Ghee Culture A2 Ghee', quantity: 1, pack: { value: 200, unit: 'ml' } };
+const ghee500: GiftItem = { name: 'Ghee Culture A2 Ghee', quantity: 1, pack: { value: 500, unit: 'ml' } };
 const almonds: GiftItem = { name: 'Almonds', quantity: 1, pack: { value: 100, unit: 'g' } };
 const cashews: GiftItem = { name: 'Cashews', quantity: 1, pack: { value: 100, unit: 'g' } };
 const honey: GiftItem = { name: 'Honey', quantity: 1, pack: { value: 100, unit: 'g' } };
@@ -40,7 +40,7 @@ const commonPersonalisation = [
 
 export const giftBoxes: GiftBox[] = [
   {
-    id: 'little-thank-you', slug: 'little-thank-you-box', name: 'Gheeji Little Thank You Box',
+    id: 'little-thank-you', slug: 'little-thank-you-box', name: 'Ghee Culture Little Thank You Box',
     pricePaise: 129900,
     description: { status: 'sample', text: 'A simple thank-you, with something to enjoy at home.' },
     idealFor: ['Team thank-yous', 'Neighbours and hosts', 'Small celebrations'],
@@ -50,7 +50,7 @@ export const giftBoxes: GiftBox[] = [
     status: 'draft',
   },
   {
-    id: 'appreciation', slug: 'appreciation-box', name: 'Gheeji Appreciation Box',
+    id: 'appreciation', slug: 'appreciation-box', name: 'Ghee Culture Appreciation Box',
     pricePaise: 199900,
     description: { status: 'sample', text: 'A thoughtful selection for colleagues, clients, and everyday celebrations.' },
     idealFor: ['Colleagues and clients', 'Work anniversaries', 'Festive greetings'],
@@ -60,7 +60,7 @@ export const giftBoxes: GiftBox[] = [
     status: 'draft',
   },
   {
-    id: 'signature', slug: 'signature-gift-box', name: 'Gheeji Signature Gift Box',
+    id: 'signature', slug: 'signature-gift-box', name: 'Ghee Culture Signature Gift Box',
     pricePaise: 299900,
     description: { status: 'sample', text: 'A fuller gift box with pantry favourites and a personal note.' },
     idealFor: ['Key clients and partners', 'Milestones', 'Family celebrations'],
@@ -75,10 +75,10 @@ export const giftBoxes: GiftBox[] = [
 export const customBox = {
   id: 'custom',
   slug: 'custom-corporate-box',
-  name: 'Gheeji Custom Corporate Box',
+  name: 'Ghee Culture Custom Corporate Box',
   description: {
     status: 'sample',
-    text: 'Start from any Gheeji box and tell us what you would like to change — contents, card message, sleeve or logo. Every custom arrangement is confirmed by quotation.',
+    text: 'Start from any Ghee Culture box and tell us what you would like to change — contents, card message, sleeve or logo. Every custom arrangement is confirmed by quotation.',
   } as Sourced,
   image: 'customBox' as ImageId,
 };

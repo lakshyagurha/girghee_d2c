@@ -61,7 +61,7 @@ export default function GiftDetail() {
                 ))}
               </tbody>
             </table>
-            <p className="mt-3 text-xs text-ink-soft">Packed in an Gheeji gift box (packaging, not counted as an item).</p>
+            <p className="mt-3 text-xs text-ink-soft">Packed in an Ghee Culture gift box (packaging, not counted as an item).</p>
           </div>
 
           <div className="mt-6 flex flex-wrap items-end gap-3">
@@ -99,7 +99,7 @@ export default function GiftDetail() {
 
       <section aria-labelledby="more-title" className="section-y">
         <div className="container-x">
-          <SectionHeading id="more-title" eyebrow="Compare" title="Other Gheeji boxes" />
+          <SectionHeading id="more-title" eyebrow="Compare" title="Other Ghee Culture boxes" />
           <div className="mt-10 grid gap-8 md:grid-cols-2">
             {others.map((b) => <GiftCard key={b.id} box={b} />)}
           </div>

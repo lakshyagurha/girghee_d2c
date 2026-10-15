@@ -3,13 +3,13 @@ export interface Faq { q: string; a: string; link?: { label: string; to: string 
 export const homeFaqs: Faq[] = [
   {
     q: 'Which jar size should I choose?',
-    a: 'All three jars hold the same Gheeji A2 Ghee. Only the size changes. The 200 ml jar is an easy way to try it or to include in a gift, the 500 ml jar suits kitchens that cook with ghee through the week, and the 1 litre jar is for larger households.',
+    a: 'All three jars hold the same Ghee Culture A2 Ghee. Only the size changes. The 200 ml jar is an easy way to try it or to include in a gift, the 500 ml jar suits kitchens that cook with ghee through the week, and the 1 litre jar is for larger households.',
     link: { label: 'Compare sizes', to: '/shop' },
   },
   {
     q: 'Where can I find ingredients, storage and shelf-life details?',
     a: 'Each detail is listed on the product page and will match the printed label. Anything we have not yet confirmed is marked as awaiting information rather than guessed.',
-    link: { label: 'Product details', to: '/shop/gheeji-a2-ghee' },
+    link: { label: 'Product details', to: '/shop/ghee-culture-a2-ghee' },
   },
   {
     q: 'What exactly is inside each gift box?',

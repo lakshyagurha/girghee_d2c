@@ -5,7 +5,7 @@ import { Logo } from './Logo';
 
 const cols = [
   { title: 'Shop', links: [{ label: 'A2 Ghee', to: '/shop' }, { label: 'Gift Boxes', to: '/gifts' }] },
-  { title: 'Learn', links: [{ label: 'About ghee', to: '/learn' }, { label: 'Reading a ghee label', to: '/learn#label' }, { label: 'About Gheeji', to: '/about' }] },
+  { title: 'Learn', links: [{ label: 'About ghee', to: '/learn' }, { label: 'Reading a ghee label', to: '/learn#label' }, { label: 'About Ghee Culture', to: '/about' }] },
   { title: 'Corporate', links: [{ label: 'Corporate gifting', to: '/corporate-gifting' }, { label: 'Request a quote', to: '/corporate-gifting#quote' }] },
 ];
 

@@ -12,7 +12,7 @@ import { GiftCard } from '../components/GiftCard';
 import { ArrowLink, Disclosure, Eyebrow, SectionHeading } from '../components/ui';
 
 export default function Home() {
-  usePageMeta('', 'Gheeji A2 ghee in three jar sizes, ready-made gift boxes, and corporate gifting quotes for teams and clients.');
+  usePageMeta('', 'Ghee Culture A2 ghee in three jar sizes, ready-made gift boxes, and corporate gifting quotes for teams and clients.');
   return (
     <>
       <Hero />
@@ -38,7 +38,7 @@ function Hero() {
             <span className="block italic text-oxblood">Thoughtful gifts for your&nbsp;people.</span>
           </h1>
           <p className="mt-6 max-w-[34rem] text-lg text-ink-soft sm:text-xl">
-            Explore Gheeji ghee and gift boxes for everyday meals, celebrations, and thank-yous.
+            Explore Ghee Culture ghee and gift boxes for everyday meals, celebrations, and thank-yous.
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <Link to="/shop" className="btn-primary">Shop A2 Ghee</Link>
@@ -67,7 +67,7 @@ function ChooseJar() {
     <section aria-labelledby="jar-title" className="section-y border-t border-line bg-paper">
       <div className="container-x">
         <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
-          <SectionHeading id="jar-title" eyebrow="Choose your jar" title="One ghee, three sizes." intro="The same Gheeji A2 Ghee in every jar. Pick the size that suits how often you cook with it." />
+          <SectionHeading id="jar-title" eyebrow="Choose your jar" title="One ghee, three sizes." intro="The same Ghee Culture A2 Ghee in every jar. Pick the size that suits how often you cook with it." />
           <ArrowLink to={`/shop/${ghee.slug}`}>Full product details</ArrowLink>
         </div>
         <ul className="mt-12 grid gap-10 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8">
@@ -100,13 +100,13 @@ function KnowWhatYouBuy() {
     { n: '01', title: 'What is in the jar', body: 'Ingredients, net quantity and storage details, taken from the product label.', to: `/shop/${ghee.slug}#details`, cta: 'Product details' },
     { n: '02', title: 'What “A2” refers to', body: 'A plain explanation of the term, and what it does and does not tell you about ghee.', to: '/learn#a2', cta: 'Read the explainer' },
     { n: '03', title: 'How to read a ghee label', body: 'The details to look for on any jar, from the licence number to the net quantity.', to: '/learn#label', cta: 'Label checklist' },
-    { n: '04', title: 'Where it comes from', body: 'Sourcing and production details will be published here once they are confirmed. We will not guess.', to: '/about#sourcing', cta: 'About Gheeji' },
+    { n: '04', title: 'Where it comes from', body: 'Sourcing and production details will be published here once they are confirmed. We will not guess.', to: '/about#sourcing', cta: 'About Ghee Culture' },
   ];
   return (
     <section aria-labelledby="know-title" className="section-y">
       <div className="container-x grid gap-12 lg:grid-cols-[1fr_1.4fr] lg:gap-20">
         <div className="lg:sticky lg:top-28 lg:self-start">
-          <SectionHeading id="know-title" eyebrow="Know what you are buying" title="Clear information, not slogans." intro="Good food deserves a straight explanation. Here is where to find the facts about Gheeji ghee." />
+          <SectionHeading id="know-title" eyebrow="Know what you are buying" title="Clear information, not slogans." intro="Good food deserves a straight explanation. Here is where to find the facts about Ghee Culture ghee." />
         </div>
         <ol className="border-t border-line">
           {rows.map((r) => (
@@ -154,7 +154,7 @@ function Gifts() {
     <section aria-labelledby="gifts-title" className="section-y">
       <div className="container-x">
         <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
-          <SectionHeading id="gifts-title" eyebrow="Gifts with a clear purpose" title="Open the box, and you know what is inside." intro="Three ready-made boxes with Gheeji ghee at the centre. Every item and pack size is listed." />
+          <SectionHeading id="gifts-title" eyebrow="Gifts with a clear purpose" title="Open the box, and you know what is inside." intro="Three ready-made boxes with Ghee Culture ghee at the centre. Every item and pack size is listed." />
           <Link to="/gifts" className="btn-secondary shrink-0">Explore Gift Boxes</Link>
         </div>
         <div className="mt-12 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -174,7 +174,7 @@ function Corporate() {
           <Eyebrow>Corporate gifting</Eyebrow>
           <h2 id="corp-title" className="mt-4 text-h2 font-normal text-ivory">Gifts for your team and clients, planned with you.</h2>
           <p className="mt-5 max-w-xl text-lg text-ivory/85">
-            Start from an Gheeji gift box and shape it around the occasion: a thank-you after a big quarter, a welcome for new joiners, or festive greetings to clients.
+            Start from an Ghee Culture gift box and shape it around the occasion: a thank-you after a big quarter, a welcome for new joiners, or festive greetings to clients.
           </p>
           <ul className="mt-10 grid gap-x-8 gap-y-6 sm:grid-cols-2">
             {occasions.map((o) => (
@@ -232,7 +232,7 @@ function Closing() {
           <div className="ml-auto max-w-lg">
             <Eyebrow>For your kitchen</Eyebrow>
             <h2 className="mt-4 text-h2 font-normal">Shop for yourself.</h2>
-            <p className="mt-4 text-ink-soft">Choose a 200 ml, 500 ml or 1 litre jar of Gheeji A2 Ghee.</p>
+            <p className="mt-4 text-ink-soft">Choose a 200 ml, 500 ml or 1 litre jar of Ghee Culture A2 Ghee.</p>
             <Link to="/shop" className="btn-primary mt-8">Shop A2 Ghee</Link>
           </div>
         </div>

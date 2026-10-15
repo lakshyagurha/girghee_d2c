@@ -107,7 +107,7 @@ function GheeDetailPage() {
           </div>
 
           <div className="mt-8 border-t border-line pt-5 text-sm text-ink-soft">
-            Giving it as a gift? <Link to="/gifts" className="link">Every Gheeji gift box includes a jar</Link>. For teams, see <Link to="/corporate-gifting" className="link">corporate gifting</Link>.
+            Giving it as a gift? <Link to="/gifts" className="link">Every Ghee Culture gift box includes a jar</Link>. For teams, see <Link to="/corporate-gifting" className="link">corporate gifting</Link>.
           </div>
         </div>
       </section>
@@ -128,7 +128,7 @@ function GheeDetailPage() {
             {ghee.info.map((s) => (
               <Disclosure key={s.id} title={<span className="flex flex-wrap items-center gap-2">{s.title} <ProvenanceTag status={s.content.status} /></span>}>
                 <p>{s.content.text ?? PENDING_COPY}</p>
-                {s.generalNote && <p className="mt-3"><strong className="font-semibold text-ink">General guidance (not Gheeji-specific): </strong>{s.generalNote}</p>}
+                {s.generalNote && <p className="mt-3"><strong className="font-semibold text-ink">General guidance (not Ghee Culture-specific): </strong>{s.generalNote}</p>}
                 {s.link && <ArrowLink to={s.link.to} className="mt-2">{s.link.label}</ArrowLink>}
               </Disclosure>
             ))}
@@ -139,7 +139,7 @@ function GheeDetailPage() {
       <section aria-labelledby="gift-link-title" className="section-y">
         <div className="container-x">
           <div className="flex flex-col justify-between gap-6 md:flex-row md:items-end">
-            <SectionHeading id="gift-link-title" eyebrow="Also from Gheeji" title="Ghee, boxed as a gift." />
+            <SectionHeading id="gift-link-title" eyebrow="Also from Ghee Culture" title="Ghee, boxed as a gift." />
             <ArrowLink to="/gifts">All gift boxes</ArrowLink>
           </div>
           <div className="mt-10 grid gap-8 md:grid-cols-2">

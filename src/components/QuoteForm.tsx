@@ -200,7 +200,7 @@ export const QuoteForm = forwardRef<QuoteFormHandle, Props>(function QuoteForm({
             {...err('consent')}
           />
           <span className="text-[0.95rem]">
-            Gheeji may use these details to respond to this enquiry. <span aria-hidden="true">*</span>
+            Ghee Culture may use these details to respond to this enquiry. <span aria-hidden="true">*</span>
             <span className="block text-sm text-ink-soft">They will not be used for marketing. See the <Link to="/policies/privacy" className="link">privacy notice (draft)</Link>.</span>
           </span>
         </label>

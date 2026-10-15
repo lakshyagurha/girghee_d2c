@@ -6,7 +6,7 @@ import { usePageMeta } from '../lib/hooks';
 import { Eyebrow } from '../components/ui';
 
 export default function Contact() {
-  usePageMeta('Contact', 'Contact Gheeji about an order, a gift box or corporate gifting.');
+  usePageMeta('Contact', 'Contact Ghee Culture about an order, a gift box or corporate gifting.');
   const channels = [
     contact.email && { label: 'Email', value: contact.email, href: `mailto:${contact.email}` },
     contact.phone && { label: 'Phone', value: contact.phone, href: `tel:${contact.phone.replace(/\s/g, '')}` },
@@ -100,7 +100,7 @@ function ContactForm() {
       <div>
         <label className="flex items-start gap-3">
           <input type="checkbox" className="mt-0.5 h-6 w-6 shrink-0 accent-navy" checked={v.consent} onChange={(e) => setV({ ...v, consent: e.target.checked })} {...a('consent')} />
-          <span className="text-[0.95rem]">Gheeji may use these details to reply to my message. <span aria-hidden="true">*</span></span>
+          <span className="text-[0.95rem]">Ghee Culture may use these details to reply to my message. <span aria-hidden="true">*</span></span>
         </label>
         {errors.consent && <p id="c-consent-err" className="mt-1.5 text-sm font-medium text-danger">{errors.consent}</p>}
       </div>

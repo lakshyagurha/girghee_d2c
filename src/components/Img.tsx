@@ -56,7 +56,7 @@ export function Img({ id, className = '', ratio, priority, compact, sizes }: Pro
     >
       <div className="pointer-events-none absolute inset-2 border border-gold/40 sm:inset-3" aria-hidden="true" />
       <div aria-hidden="true" className={`relative flex flex-1 flex-col items-center justify-center text-center ${compact ? 'p-1' : 'p-6 sm:p-8'}`}>
-        <span className={`font-serif tracking-[0.1em] text-navy/25 ${compact ? 'text-sm' : 'text-2xl sm:text-3xl'}`}>Gheeji</span>
+        <span className={`font-serif tracking-[0.1em] text-navy/25 ${compact ? 'text-sm' : 'text-2xl sm:text-3xl'}`}>Ghee Culture</span>
         {!compact && (
           <p className="mt-3 max-w-[30ch] text-[0.8rem] leading-snug text-ink-soft">{slot.brief}</p>
         )}

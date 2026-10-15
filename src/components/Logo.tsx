@@ -16,8 +16,8 @@ export function LogoMark({ tone = 'dark', className = '' }: { tone?: 'dark' | 'l
       height={height}
       alt=""
       decoding="async"
-      className="block shrink-0 object-contain"
-      style={{ width, height }}
+      // 56×36 on small phones so the longer wordmark and the cart fit at 360px; full size from 400px.
+      className="block h-9 w-14 shrink-0 object-contain min-[400px]:h-11 min-[400px]:w-[69px]"
     />
   );
   if (tone === 'light') {
@@ -30,10 +30,10 @@ export function LogoMark({ tone = 'dark', className = '' }: { tone?: 'dark' | 'l
 export function LogoLockup({ tone = 'dark', withDescriptor = true }: { tone?: 'dark' | 'light'; withDescriptor?: boolean }) {
   const color = tone === 'dark' ? 'text-navy' : 'text-ivory';
   return (
-    <span className={`inline-flex items-center gap-3 ${color}`}>
+    <span className={`inline-flex items-center gap-2 min-[400px]:gap-3 ${color}`}>
       <LogoMark tone={tone} />
       <span className="flex flex-col justify-center whitespace-nowrap">
-        <span className="font-serif text-[1.625rem] font-medium leading-none tracking-[0.02em]">{brand.name}</span>
+        <span className="font-serif text-[1.2rem] font-medium min-[400px]:text-[1.3rem] sm:text-[1.625rem] leading-none tracking-[0.02em]">{brand.name}</span>
         {withDescriptor && (
           <span className={`mt-1.5 hidden text-[0.6rem] font-semibold uppercase leading-none tracking-[0.18em] sm:block ${tone === 'dark' ? 'text-ink-soft' : 'text-sand'}`}>
             {brand.descriptor}

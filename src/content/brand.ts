@@ -4,15 +4,15 @@
  * never replace a null with a made-up value.
  */
 export const brand = {
-  name: 'Gheeji',
+  name: 'Ghee Culture',
   descriptor: 'A2 Ghee & Thoughtful Gifting',
   /**
-   * Brand mark (woman churning ghee), cropped from the master at /brand/gheeji-mark.png.
-   * Displayed at a fixed 69 × 44 px; aspect ratio 1.575 must match the files.
+   * Brand mark (woman churning ghee), cropped from the master at /brand/ghee-culture-mark.png.
+   * Displayed at a fixed 69 × 44 px (56 × 36 below 400px); aspect ratio 1.575 must match the files.
    */
   logo: {
-    src: '/brand/gheeji-mark-96.webp',
-    srcSet: '/brand/gheeji-mark-96.webp 2x, /brand/gheeji-mark-144.webp 3x',
+    src: '/brand/ghee-culture-mark-96.webp',
+    srcSet: '/brand/ghee-culture-mark-96.webp 2x, /brand/ghee-culture-mark-144.webp 3x',
     width: 69,
     height: 44,
   },

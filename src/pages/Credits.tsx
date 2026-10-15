@@ -18,8 +18,8 @@ export default function Credits() {
     <section className="container-x max-w-4xl py-12 lg:py-20">
       <h1 className="text-h2 font-normal">Image credits</h1>
       <p className="mt-5 text-ink-soft">
-        This prototype uses openly licensed photographs from Wikimedia Commons as stand-ins until Gheeji’s own photography is ready.
-        They are marked “Illustrative” on the site and do not show Gheeji products, packaging or operations.
+        This prototype uses openly licensed photographs from Wikimedia Commons as stand-ins until Ghee Culture’s own photography is ready.
+        They are marked “Illustrative” on the site and do not show Ghee Culture products, packaging or operations.
         Images have been cropped, colour-adjusted and, for gift box contents, combined. Adaptations of CC BY-SA images are shared under the same licence.
       </p>
       <div className="relative mt-10 overflow-x-auto">

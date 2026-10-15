@@ -25,8 +25,8 @@ export interface ImageSlot {
   height: number;
   src: string | null;
   /**
-   * True for stock / third-party photography standing in for Gheeji's own photos.
-   * Shows a small "Illustrative" tag so it is never mistaken for Gheeji product photography.
+   * True for stock / third-party photography standing in for Ghee Culture's own photos.
+   * Shows a small "Illustrative" tag so it is never mistaken for Ghee Culture product photography.
    */
   illustrative?: boolean;
   credits?: Credit[];
@@ -60,65 +60,65 @@ export const images = {
     id: 'hero-composition', kind: 'lifestyle', width: 1200, height: 1501,
     src: '/images/hero-composition.webp', illustrative: true, credits: [C.jar],
     alt: 'A glass jar filled with golden ghee, in soft natural light',
-    brief: 'FINAL: Gheeji jar + open Appreciation Box on linen and warm wood, soft window light, uncluttered.',
+    brief: 'FINAL: Ghee Culture jar + open Appreciation Box on linen and warm wood, soft window light, uncluttered.',
   }),
   heroDetail: slot({
     id: 'hero-detail', kind: 'lifestyle', width: 800, height: 801,
     src: '/images/hero-detail.webp', illustrative: true, credits: [C.spoonBowl],
     alt: 'A spoon lifting grainy, golden ghee from a bowl',
-    brief: 'FINAL: close-up of a spoon of Gheeji ghee over hot rice. Natural colour, not over-glossy.',
+    brief: 'FINAL: close-up of a spoon of Ghee Culture ghee over hot rice. Natural colour, not over-glossy.',
   }),
   ghee200: slot({
     id: 'ghee-200ml', kind: 'product', width: 1000, height: 1250,
     src: '/images/ghee-jar.webp', illustrative: true, credits: [C.jar],
-    alt: 'Illustrative photo: a glass jar of golden ghee (not the actual Gheeji 200 ml jar)',
-    brief: 'FINAL: 200 ml Gheeji jar, front-facing, on warm white (#FFFDF8). Full label legible. Same angle and light for all sizes.',
+    alt: 'Illustrative photo: a glass jar of golden ghee (not the actual Ghee Culture 200 ml jar)',
+    brief: 'FINAL: 200 ml Ghee Culture jar, front-facing, on warm white (#FFFDF8). Full label legible. Same angle and light for all sizes.',
   }),
   ghee500: slot({
     id: 'ghee-500ml', kind: 'product', width: 1000, height: 1250,
     src: '/images/ghee-jar.webp', illustrative: true, credits: [C.jar],
-    alt: 'Illustrative photo: a glass jar of golden ghee (not the actual Gheeji 500 ml jar)',
-    brief: 'FINAL: 500 ml Gheeji jar, front-facing, on warm white (#FFFDF8). Full label legible. Same angle and light for all sizes.',
+    alt: 'Illustrative photo: a glass jar of golden ghee (not the actual Ghee Culture 500 ml jar)',
+    brief: 'FINAL: 500 ml Ghee Culture jar, front-facing, on warm white (#FFFDF8). Full label legible. Same angle and light for all sizes.',
   }),
   ghee1l: slot({
     id: 'ghee-1l', kind: 'product', width: 1000, height: 1250,
     src: '/images/ghee-jar.webp', illustrative: true, credits: [C.jar],
-    alt: 'Illustrative photo: a glass jar of golden ghee (not the actual Gheeji 1 litre jar)',
-    brief: 'FINAL: 1 litre Gheeji jar, front-facing, on warm white (#FFFDF8). Full label legible. Same angle and light for all sizes.',
+    alt: 'Illustrative photo: a glass jar of golden ghee (not the actual Ghee Culture 1 litre jar)',
+    brief: 'FINAL: 1 litre Ghee Culture jar, front-facing, on warm white (#FFFDF8). Full label legible. Same angle and light for all sizes.',
   }),
   gheeLabel: slot({
     id: 'ghee-label-back', kind: 'product', width: 1000, height: 1250,
-    alt: 'Back label of the Gheeji ghee jar showing ingredients, net quantity and batch details',
+    alt: 'Back label of the Ghee Culture ghee jar showing ingredients, net quantity and batch details',
     brief: 'Flat, legible photo of the approved back label (ingredients, FSSAI licence, net quantity, dates).',
   }),
   gheeTexture: slot({
     id: 'ghee-texture', kind: 'lifestyle', width: 1000, height: 1250,
     src: '/images/ghee-texture.webp', illustrative: true, credits: [C.bowl],
     alt: 'Ghee in an open steel container, showing its smooth, golden surface',
-    brief: 'FINAL: open Gheeji jar from above, spoon lifting ghee, showing natural texture. Linen underneath.',
+    brief: 'FINAL: open Ghee Culture jar from above, spoon lifting ghee, showing natural texture. Linen underneath.',
   }),
   gheeKitchen: slot({
     id: 'ghee-kitchen', kind: 'lifestyle', width: 1000, height: 1250,
     src: '/images/ghee-kitchen.webp', illustrative: true, credits: [C.roti],
     alt: 'A stack of freshly made chapatis on a plate in a home kitchen',
-    brief: 'FINAL: Gheeji jar on the counter beside a tawa and a stack of rotis. Home kitchen, daylight.',
+    brief: 'FINAL: Ghee Culture jar on the counter beside a tawa and a stack of rotis. Home kitchen, daylight.',
   }),
   mealDal: slot({
     id: 'meal-dal', kind: 'lifestyle', width: 1400, height: 962,
     src: '/images/meal-dal.webp', illustrative: true, credits: [C.dal],
     alt: 'A plate of dal tadka with cumin rice and roasted papad on a dark cloth',
-    brief: 'FINAL: everyday thali with Gheeji ghee spooned over the dal. Warm, real, not styled-luxury.',
+    brief: 'FINAL: everyday thali with Ghee Culture ghee spooned over the dal. Warm, real, not styled-luxury.',
   }),
   littleClosed: slot({
     id: 'gift-little-closed', kind: 'packaging', width: 1200, height: 1200,
-    alt: 'Gheeji Little Thank You Box, closed, in warm ivory with a small Gheeji mark',
-    brief: 'Closed rigid box, warm ivory, navy accent, fine antique-gold detail, restrained Gheeji mark.',
+    alt: 'Ghee Culture Little Thank You Box, closed, in warm ivory with a small Ghee Culture mark',
+    brief: 'Closed rigid box, warm ivory, navy accent, fine antique-gold detail, restrained Ghee Culture mark.',
   }),
   littleOpen: slot({
     id: 'gift-little-contents', kind: 'packaging', width: 1200, height: 1200,
     src: '/images/contents-little.webp', illustrative: true, credits: [C.jar, C.almonds],
-    alt: 'What is inside the Little Thank You Box: a jar of ghee, almonds and a greeting card. Illustrative photos of each item, not the final Gheeji packaging',
-    brief: 'FINAL: open Gheeji box from above showing exactly these items in the fitted insert.',
+    alt: 'What is inside the Little Thank You Box: a jar of ghee, almonds and a greeting card. Illustrative photos of each item, not the final Ghee Culture packaging',
+    brief: 'FINAL: open Ghee Culture box from above showing exactly these items in the fitted insert.',
   }),
   littleContents: slot({
     id: 'gift-little-contents', kind: 'packaging', width: 1200, height: 1200,
@@ -127,14 +127,14 @@ export const images = {
   }),
   appreciationClosed: slot({
     id: 'gift-appreciation-closed', kind: 'packaging', width: 1200, height: 1200,
-    alt: 'Gheeji Appreciation Box, closed',
+    alt: 'Ghee Culture Appreciation Box, closed',
     brief: 'Closed rigid box, same family as Little Thank You, slightly larger.',
   }),
   appreciationOpen: slot({
     id: 'gift-appreciation-contents', kind: 'packaging', width: 1200, height: 1200,
     src: '/images/contents-appreciation.webp', illustrative: true, credits: [C.jar, C.almonds, C.cashews, C.honey],
-    alt: 'What is inside the Appreciation Box: a jar of ghee, almonds, cashews, honey and a greeting card. Illustrative photos of each item, not the final Gheeji packaging',
-    brief: 'FINAL: open Gheeji box from above showing exactly these items in the fitted insert.',
+    alt: 'What is inside the Appreciation Box: a jar of ghee, almonds, cashews, honey and a greeting card. Illustrative photos of each item, not the final Ghee Culture packaging',
+    brief: 'FINAL: open Ghee Culture box from above showing exactly these items in the fitted insert.',
   }),
   appreciationContents: slot({
     id: 'gift-appreciation-contents', kind: 'packaging', width: 1200, height: 1200,
@@ -143,14 +143,14 @@ export const images = {
   }),
   signatureClosed: slot({
     id: 'gift-signature-closed', kind: 'packaging', width: 1200, height: 1200,
-    alt: 'Gheeji Signature Gift Box, closed',
+    alt: 'Ghee Culture Signature Gift Box, closed',
     brief: 'Largest rigid box in the range, closed, fine gold detail.',
   }),
   signatureOpen: slot({
     id: 'gift-signature-contents', kind: 'packaging', width: 1200, height: 1200,
     src: '/images/contents-signature.webp', illustrative: true, credits: [C.jar, C.almonds, C.cashews, C.honey, C.tea, C.spoon],
-    alt: 'What is inside the Signature Gift Box: a jar of ghee, almonds, cashews, honey, tea, a reusable spoon and a greeting card. Illustrative photos of each item, not the final Gheeji packaging',
-    brief: 'FINAL: open Gheeji box from above showing exactly these items in the fitted insert.',
+    alt: 'What is inside the Signature Gift Box: a jar of ghee, almonds, cashews, honey, tea, a reusable spoon and a greeting card. Illustrative photos of each item, not the final Ghee Culture packaging',
+    brief: 'FINAL: open Ghee Culture box from above showing exactly these items in the fitted insert.',
   }),
   signatureContents: slot({
     id: 'gift-signature-contents', kind: 'packaging', width: 1200, height: 1200,
@@ -159,35 +159,35 @@ export const images = {
   }),
   customBox: slot({
     id: 'gift-custom-concept', kind: 'concept', width: 1200, height: 1200,
-    alt: 'Concept: an Gheeji gift box with a plain sleeve showing where a company logo could be placed',
+    alt: 'Concept: an Ghee Culture gift box with a plain sleeve showing where a company logo could be placed',
     brief: 'CONCEPT render: box with a blank sleeve marking a logo area. Must be labelled as a concept.',
   }),
   corporateHero: slot({
     id: 'corporate-contents', kind: 'lifestyle', width: 1600, height: 1200,
     src: '/images/corporate-contents.webp', illustrative: true, credits: [C.jar, C.almonds, C.cashews, C.honey, C.tea, C.spoon],
-    alt: 'The items that go into Gheeji gift boxes: ghee, almonds, cashews, honey, tea, a wooden spoon and a "With Appreciation" card',
-    brief: 'FINAL: a row of closed Gheeji gift boxes with message cards, ready to hand out. Office-neutral setting.',
+    alt: 'The items that go into Ghee Culture gift boxes: ghee, almonds, cashews, honey, tea, a wooden spoon and a "With Appreciation" card',
+    brief: 'FINAL: a row of closed Ghee Culture gift boxes with message cards, ready to hand out. Office-neutral setting.',
   }),
   packagingLid: slot({
     id: 'packaging-lid', kind: 'packaging', width: 1000, height: 1000,
-    alt: 'Close-up of the inside of an Gheeji gift box lid reading "With Appreciation"',
+    alt: 'Close-up of the inside of an Ghee Culture gift box lid reading "With Appreciation"',
     brief: 'Macro of lid interior: "With Appreciation" in fine gold, textured paper.',
   }),
   packagingInsert: slot({
     id: 'packaging-insert', kind: 'packaging', width: 1000, height: 1000,
-    alt: 'Close-up of the fitted insert holding items in an Gheeji gift box',
+    alt: 'Close-up of the fitted insert holding items in an Ghee Culture gift box',
     brief: 'Macro of the fitted insert and how items sit securely.',
   }),
   packagingCard: slot({
     id: 'packaging-card', kind: 'packaging', width: 1000, height: 1000,
-    alt: 'An Gheeji greeting card with space for a personal message',
-    brief: 'Greeting card on linen, blank message area, restrained Gheeji mark.',
+    alt: 'An Ghee Culture greeting card with space for a personal message',
+    brief: 'Greeting card on linen, blank message area, restrained Ghee Culture mark.',
   }),
   aboutTable: slot({
     id: 'about-table', kind: 'lifestyle', width: 1400, height: 875,
     src: '/images/about-table.webp', illustrative: true, credits: [C.thali],
     alt: 'A home-style thali with rotis, rice, dal, curries, a sweet and buttermilk',
-    brief: 'FINAL: shared meal table with the Gheeji jar in use, a gift box on the side. No staged farms.',
+    brief: 'FINAL: shared meal table with the Ghee Culture jar in use, a gift box on the side. No staged farms.',
   }),
 } satisfies Record<string, ImageSlot>;
 

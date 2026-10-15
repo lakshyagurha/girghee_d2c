@@ -5,7 +5,7 @@ import type { ImageId } from './images';
  * sample copy can never be mistaken for approved product information.
  *  - approved: confirmed by the business / final label. Safe to publish.
  *  - sample:   prototype copy written for this build. Needs owner approval.
- *  - general:  general, non-Gheeji-specific information (e.g. "ghee is a dairy product").
+ *  - general:  general, non-Ghee Culture-specific information (e.g. "ghee is a dairy product").
  *  - pending:  fact is required but not yet supplied. Rendered as "awaiting information".
  */
 export type Provenance = 'approved' | 'sample' | 'general' | 'pending';
@@ -59,9 +59,9 @@ export interface GheeProduct {
 }
 
 export const ghee: GheeProduct = {
-  id: 'gheeji-a2-ghee',
-  slug: 'gheeji-a2-ghee',
-  name: 'Gheeji A2 Ghee',
+  id: 'ghee-culture-a2-ghee',
+  slug: 'ghee-culture-a2-ghee',
+  name: 'Ghee Culture A2 Ghee',
   shortName: 'A2 Ghee',
   description: {
     status: 'sample',
@@ -70,21 +70,21 @@ export const ghee: GheeProduct = {
   defaultVariantId: '500ml',
   variants: [
     {
-      id: '200ml', sku: 'GHEEJI-GHEE-200ML', label: '200 ml',
+      id: '200ml', sku: 'GC-GHEE-200ML', label: '200 ml',
       volume: { value: 200, unit: 'ml' }, netMass: null,
       pricePaise: 59900,
       useCase: 'A first jar, a smaller household, or a jar to tuck into a gift.',
       image: 'ghee200', available: true,
     },
     {
-      id: '500ml', sku: 'GHEEJI-GHEE-500ML', label: '500 ml',
+      id: '500ml', sku: 'GC-GHEE-500ML', label: '500 ml',
       volume: { value: 500, unit: 'ml' }, netMass: null,
       pricePaise: 129900,
       useCase: 'For kitchens that reach for ghee through the week.',
       image: 'ghee500', available: true,
     },
     {
-      id: '1l', sku: 'GHEEJI-GHEE-1L', label: '1 litre',
+      id: '1l', sku: 'GC-GHEE-1L', label: '1 litre',
       volume: { value: 1, unit: 'l' }, netMass: null,
       pricePaise: 239900,
       useCase: 'For larger families and regular home cooking.',

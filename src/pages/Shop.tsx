@@ -8,14 +8,14 @@ import { Img } from '../components/Img';
 import { ArrowLink, Eyebrow, ProvenanceTag, SectionHeading } from '../components/ui';
 
 export default function Shop() {
-  usePageMeta('Shop A2 Ghee', 'Gheeji A2 Ghee in 200 ml, 500 ml and 1 litre glass jars.');
+  usePageMeta('Shop A2 Ghee', 'Ghee Culture A2 Ghee in 200 ml, 500 ml and 1 litre glass jars.');
   const { add } = useCart();
   return (
     <>
       <section className="border-b border-line">
         <div className="container-x py-12 sm:py-16 lg:py-20">
           <Eyebrow>Shop</Eyebrow>
-          <h1 className="mt-4 max-w-3xl text-display font-light">Gheeji A2 Ghee</h1>
+          <h1 className="mt-4 max-w-3xl text-display font-light">Ghee Culture A2 Ghee</h1>
           <p className="mt-5 max-w-2xl text-lg text-ink-soft">{ghee.description.text}</p>
           <div className="mt-3"><ProvenanceTag status={ghee.description.status} /></div>
         </div>
@@ -49,7 +49,7 @@ export default function Shop() {
           <h2 id="compare-title" className="text-h3 font-normal">Compare sizes</h2>
           <div className="mt-6 overflow-x-auto">
             <table className="w-full min-w-[30rem] text-left">
-              <caption className="sr-only">Gheeji A2 Ghee sizes and prices</caption>
+              <caption className="sr-only">Ghee Culture A2 Ghee sizes and prices</caption>
               <thead>
                 <tr className="border-b border-line text-sm text-ink-soft">
                   <th scope="col" className="py-3 pr-4 font-semibold">Jar</th>
@@ -80,7 +80,7 @@ export default function Shop() {
         <div className="container-x grid items-center gap-10 md:grid-cols-2">
           <Img id={giftBoxes[1].images.open} ratio="4 / 3" />
           <div>
-            <SectionHeading id="also-title" eyebrow="Giving ghee as a gift?" title="Every Gheeji gift box includes a jar." intro="Choose a ready-made box with ghee, pantry favourites and a greeting card." />
+            <SectionHeading id="also-title" eyebrow="Giving ghee as a gift?" title="Every Ghee Culture gift box includes a jar." intro="Choose a ready-made box with ghee, pantry favourites and a greeting card." />
             <div className="mt-6 flex flex-wrap gap-x-6">
               <ArrowLink to="/gifts">See gift boxes</ArrowLink>
               <ArrowLink to="/learn">Learn about ghee</ArrowLink>

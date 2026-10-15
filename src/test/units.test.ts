@@ -26,7 +26,7 @@ describe('catalogue', () => {
   });
   it('has the agreed gift item counts (packaging not counted)', () => {
     expect(giftBoxes.map(itemCount)).toEqual([3, 5, 7]);
-    expect(giftBoxes[2].contents.find((i) => i.name === 'Gheeji A2 Ghee')?.pack).toEqual({ value: 500, unit: 'ml' });
+    expect(giftBoxes[2].contents.find((i) => i.name === 'Ghee Culture A2 Ghee')?.pack).toEqual({ value: 500, unit: 'ml' });
   });
 });
 

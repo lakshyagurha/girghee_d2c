@@ -9,7 +9,7 @@ import { DraftNote, Eyebrow } from '../components/ui';
 type Sort = 'price-asc' | 'price-desc';
 
 export default function Gifts() {
-  usePageMeta('Gift Boxes', 'Ready-made Gheeji gift boxes with A2 ghee, pantry favourites and a greeting card. Every item listed.');
+  usePageMeta('Gift Boxes', 'Ready-made Ghee Culture gift boxes with A2 ghee, pantry favourites and a greeting card. Every item listed.');
   const [sort, setSort] = useState<Sort>('price-asc');
   const sorted = [...giftBoxes].sort((a, b) => ((a.pricePaise ?? 0) - (b.pricePaise ?? 0)) * (sort === 'price-asc' ? 1 : -1));
 
@@ -19,7 +19,7 @@ export default function Gifts() {
         <div className="container-x py-12 sm:py-16 lg:py-20">
           <Eyebrow>Gift boxes</Eyebrow>
           <h1 className="mt-4 max-w-3xl text-display font-light">Something good to open, and to use.</h1>
-          <p className="mt-5 max-w-2xl text-lg text-ink-soft">Each box is built around a jar of Gheeji A2 Ghee, with a greeting card for your note. The contents and pack sizes are listed on every box.</p>
+          <p className="mt-5 max-w-2xl text-lg text-ink-soft">Each box is built around a jar of Ghee Culture A2 Ghee, with a greeting card for your note. The contents and pack sizes are listed on every box.</p>
           <div className="mt-4"><DraftNote>The box line-up is a draft for review. Contents may change before launch.</DraftNote></div>
         </div>
       </section>

@@ -16,7 +16,7 @@ export function GiftCard({ box, headingLevel = 3 }: { box: GiftBox; headingLevel
       <div className="flex flex-1 flex-col p-5 sm:p-6">
         <div className="flex items-baseline justify-between gap-3">
           <H className="text-h3 font-normal">
-            <Link to={`/gifts/${box.slug}`} className="hover:text-navy">{box.name.replace('Gheeji ', '')}</Link>
+            <Link to={`/gifts/${box.slug}`} className="hover:text-navy">{box.name.replace('Ghee Culture ', '')}</Link>
           </H>
           <p className="tabular shrink-0 text-lg font-semibold">{box.pricePaise != null ? formatINR(box.pricePaise) : 'On quote'}</p>
         </div>

@@ -20,7 +20,7 @@ export default function Policy() {
     <section className="container-x max-w-3xl py-12 lg:py-20">
       <p className="inline-block rounded-sm border border-brass px-2 py-1 text-xs font-bold uppercase tracking-[0.12em] text-brass">Draft, pending business and legal review</p>
       <h1 className="mt-4 text-h2 font-normal">{page.label}</h1>
-      <p className="mt-5 text-ink-soft">This policy has not been written yet. The final text will be provided by Gheeji after business and legal review. Nothing on this page is a commitment.</p>
+      <p className="mt-5 text-ink-soft">This policy has not been written yet. The final text will be provided by Ghee Culture after business and legal review. Nothing on this page is a commitment.</p>
       <h2 className="mt-10 font-sans text-base font-semibold">This policy will cover</h2>
       <ul className="mt-3 space-y-2">
         {outlines[page.slug].map((o) => <li key={o} className="flex gap-3"><span className="mt-2.5 h-1.5 w-1.5 shrink-0 rotate-45 bg-gold" aria-hidden="true" />{o}</li>)}

@@ -23,7 +23,7 @@ describe('Journey A: home → size → quantity → cart → edit → checkout',
 
     // Choose the 1 litre jar from "Choose your jar"
     await user.click(screen.getByRole('link', { name: /details for the 1 litre jar/i }));
-    expect(router.state.location.pathname).toBe('/shop/gheeji-a2-ghee');
+    expect(router.state.location.pathname).toBe('/shop/ghee-culture-a2-ghee');
     expect(router.state.location.search).toBe('?size=1l');
     expect(screen.getByRole('radio', { name: /1 litre/i })).toBeChecked();
 
@@ -48,7 +48,7 @@ describe('Journey A: home → size → quantity → cart → edit → checkout',
     expect(within(drawer).getAllByText('₹3,897').length).toBe(2); // line total + subtotal
 
     // Persisted without prices
-    const stored = JSON.parse(localStorage.getItem('gheeji.cart.v1')!);
+    const stored = JSON.parse(localStorage.getItem('gheeculture.cart.v1')!);
     expect(stored).toEqual([{ kind: 'ghee', variantId: '500ml', qty: 3 }]);
 
     // Escape closes and returns focus to the add button
@@ -70,7 +70,7 @@ describe('Journey A: home → size → quantity → cart → edit → checkout',
     fetchSpy.mockRestore();
 
     // Remove → empty state
-    await user.click(screen.getByRole('button', { name: /remove gheeji a2 ghee 500 ml/i }));
+    await user.click(screen.getByRole('button', { name: /remove ghee culture a2 ghee 500 ml/i }));
     expect(screen.getByText(/your cart is empty/i)).toBeInTheDocument();
   });
 });
@@ -88,7 +88,7 @@ describe('Journey B: corporate → brief → prefilled form → validate → dem
     const user = userEvent.setup();
     renderAt('/corporate-gifting');
 
-    await user.click(screen.getByRole('button', { name: /start a brief with the gheeji signature gift box/i }));
+    await user.click(screen.getByRole('button', { name: /start a brief with the ghee culture signature gift box/i }));
     const builder = screen.getByRole('group', { name: /^occasion$/i });
     await user.click(within(builder).getByRole('radio', { name: /client thank-yous/i }));
     await user.click(within(screen.getByRole('group', { name: /approximate quantity/i })).getByRole('radio', { name: '51–100' }));
@@ -130,7 +130,7 @@ describe('Journey B: corporate → brief → prefilled form → validate → dem
 
 describe('navigation', () => {
   it('renders every route with an h1', () => {
-    for (const p of ['/', '/shop', '/shop/gheeji-a2-ghee', '/gifts', '/gifts/signature-gift-box', '/corporate-gifting', '/learn', '/about', '/contact', '/checkout', '/policies/privacy', '/nope', '/gifts/nope', '/shop/nope']) {
+    for (const p of ['/', '/shop', '/shop/ghee-culture-a2-ghee', '/gifts', '/gifts/signature-gift-box', '/corporate-gifting', '/learn', '/about', '/contact', '/checkout', '/policies/privacy', '/nope', '/gifts/nope', '/shop/nope']) {
       const { unmount } = (() => { const r = createMemoryRouter(routes, { initialEntries: [p] }); return render(<CartProvider><RouterProvider router={r} /></CartProvider>); })();
       expect(screen.getAllByRole('heading', { level: 1 })).toHaveLength(1);
       unmount();

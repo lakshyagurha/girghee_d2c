@@ -4,9 +4,9 @@ import { Img } from '../components/Img';
 import { Eyebrow } from '../components/ui';
 
 export default function About() {
-  usePageMeta('About Gheeji', 'Gheeji makes A2 ghee for everyday meals and gift boxes for appreciation, with clear information and considered presentation.');
+  usePageMeta('About Ghee Culture', 'Ghee Culture makes A2 ghee for everyday meals and gift boxes for appreciation, with clear information and considered presentation.');
   const principles = [
-    { title: 'Everyday food first', body: 'Ghee is the centre of Gheeji: a jar you keep in the kitchen and use for dal, rotis, rice and sweets.' },
+    { title: 'Everyday food first', body: 'Ghee is the centre of Ghee Culture: a jar you keep in the kitchen and use for dal, rotis, rice and sweets.' },
     { title: 'Gifts with a purpose', body: 'Our gift boxes take the same jar and add a few pantry favourites, so the gift is something people will actually use.' },
     { title: 'Clear information', body: 'We list what is in the jar and the box, in plain words. If a detail is not confirmed, we say so rather than guess.' },
     { title: 'Considered presentation', body: 'Sturdy boxes, fitted inserts and a card for your note, so the box looks right when it is opened.' },
@@ -16,10 +16,10 @@ export default function About() {
       <section className="border-b border-line">
         <div className="container-x grid items-end gap-10 py-12 sm:py-16 lg:grid-cols-2 lg:py-20">
           <div>
-            <Eyebrow>About Gheeji</Eyebrow>
+            <Eyebrow>About Ghee Culture</Eyebrow>
             <h1 className="mt-4 text-display font-light">Good ghee, and gifts worth giving.</h1>
           </div>
-          <p className="text-lg text-ink-soft">Gheeji brings together two things: a jar of A2 ghee for your own kitchen, and gift boxes for thanking the people around you, from colleagues and clients to family and friends.</p>
+          <p className="text-lg text-ink-soft">Ghee Culture brings together two things: a jar of A2 ghee for your own kitchen, and gift boxes for thanking the people around you, from colleagues and clients to family and friends.</p>
         </div>
       </section>
       <section className="container-x py-12 lg:py-16"><Img id="aboutTable" ratio="16 / 10" /></section>

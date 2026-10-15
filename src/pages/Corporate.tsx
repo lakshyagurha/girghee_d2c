@@ -15,7 +15,7 @@ const validBox = (id: string | null) => (id && boxOptions.some((b) => b.id === i
 const validOccasion = (id: string | null) => (id && [...occasions, otherOccasion].some((o) => o.id === id) ? id : '');
 
 export default function Corporate() {
-  usePageMeta('Corporate Gifting', 'Plan Gheeji gift boxes for employees, clients, onboarding and festive occasions. Share your budget and requirements to request a quote.');
+  usePageMeta('Corporate Gifting', 'Plan Ghee Culture gift boxes for employees, clients, onboarding and festive occasions. Share your budget and requirements to request a quote.');
   const [params] = useSearchParams();
   const formRef = useRef<QuoteFormHandle>(null);
 
@@ -43,7 +43,7 @@ export default function Corporate() {
           <div>
             <Eyebrow>Corporate gifting</Eyebrow>
             <h1 className="mt-5 text-display font-light">A thoughtful thank-you, <span className="italic text-oxblood">beautifully boxed.</span></h1>
-            <p className="mt-6 max-w-xl text-lg text-ink-soft">Plan Gheeji gift boxes for your team, clients, and special occasions. Share your budget and requirements, and start with a clear gifting brief.</p>
+            <p className="mt-6 max-w-xl text-lg text-ink-soft">Plan Ghee Culture gift boxes for your team, clients, and special occasions. Share your budget and requirements, and start with a clear gifting brief.</p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <a href="#brief" className="btn-primary">Request a Quote</a>
               <Link to="/gifts" className="btn-secondary">Explore Gift Boxes</Link>
@@ -256,7 +256,7 @@ function BriefBuilder({ quote, setQuote, onContinue }: { quote: QuoteRequest; se
         </dl>
         <div aria-live="polite" className="mt-5 text-sm text-ink-soft">
           {fits && (fits.length > 0
-            ? <p>Ready-made boxes within this budget: <strong className="text-ink">{fits.map((b) => b.name.replace('Gheeji ', '')).join(', ')}</strong>. A custom box can also be built to this budget.</p>
+            ? <p>Ready-made boxes within this budget: <strong className="text-ink">{fits.map((b) => b.name.replace('Ghee Culture ', '')).join(', ')}</strong>. A custom box can also be built to this budget.</p>
             : <p>None of the ready-made boxes fall within this budget, but a custom box could be built to it.</p>)}
         </div>
         <button type="button" onClick={onContinue} className="btn-primary mt-6 w-full">Continue to quote form</button>

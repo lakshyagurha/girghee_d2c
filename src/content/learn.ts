@@ -1,6 +1,6 @@
 /**
  * Learning page content. General educational information only — nothing here
- * describes Gheeji's own process. Each factual statement points to a reference id.
+ * describes Ghee Culture's own process. Each factual statement points to a reference id.
  * Reviewed against sources in October 2026; re-check before launch.
  */
 export interface Reference { id: string; label: string; href: string; note?: string }

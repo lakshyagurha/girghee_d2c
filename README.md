@@ -1,4 +1,4 @@
-# Gheeji — A2 Ghee & Thoughtful Gifting (prototype)
+# Ghee Culture — A2 Ghee & Thoughtful Gifting (prototype)
 
 React 18 + TypeScript + Tailwind CSS 3 + React Router 6, built with Vite. Fonts (Fraunces, Manrope) are self-hosted via `@fontsource`.
 
@@ -28,9 +28,9 @@ Routes use browser history. When deploying, configure the host to serve `index.h
 
 **Images:** put optimised files in `public/images/`, then set `src` (and the true `width`/`height`) for the slot in `images.ts`. Until a `src` is set, the site shows a labelled placeholder frame.
 
-The prototype currently uses openly licensed **stand-in photos from Wikimedia Commons** (CC0, CC BY, CC BY-SA). They are flagged `illustrative: true`, show a small "Illustrative" tag, and are credited on `/image-credits` (linked in the footer). Gift-box images are composites of real photos of each listed item; they are not Gheeji packaging. When you replace a stand-in with Gheeji's own photo, set `illustrative` to false (or remove it) and delete its `credits`. If you keep any CC BY / BY-SA image at launch, keep the credits page.
+The prototype currently uses openly licensed **stand-in photos from Wikimedia Commons** (CC0, CC BY, CC BY-SA). They are flagged `illustrative: true`, show a small "Illustrative" tag, and are credited on `/image-credits` (linked in the footer). Gift-box images are composites of real photos of each listed item; they are not Ghee Culture packaging. When you replace a stand-in with Ghee Culture's own photo, set `illustrative` to false (or remove it) and delete its `credits`. If you keep any CC BY / BY-SA image at launch, keep the credits page.
 
-Still placeholders (need Gheeji's real product/packaging): back label, closed gift boxes, packaging close-ups (lid, insert, card), custom-box concept.
+Still placeholders (need Ghee Culture's real product/packaging): back label, closed gift boxes, packaging close-ups (lid, insert, card), custom-box concept.
 
 **Content status:** each fact carries `approved | sample | general | pending`. Pending facts show as "Awaiting information" on the site; change the status to `approved` and add the text once the business confirms it.
 
@@ -45,4 +45,4 @@ Still placeholders (need Gheeji's real product/packaging): back label, closed gi
 
 ## Cart
 
-Stored in `localStorage` (`gheeji.cart.v1`) as product IDs and quantities only. Prices are always recalculated from the catalogue. Malformed or unknown entries are discarded; quantities clamped 1–20.
+Stored in `localStorage` (`gheeculture.cart.v1`) as product IDs and quantities only. Prices are always recalculated from the catalogue. Malformed or unknown entries are discarded; quantities clamped 1–20.

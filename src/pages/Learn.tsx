@@ -22,7 +22,7 @@ export default function Learn() {
         <div className="container-x py-12 sm:py-16 lg:py-20">
           <Eyebrow>Learn</Eyebrow>
           <h1 className="mt-4 max-w-3xl text-display font-light">Ghee, explained plainly.</h1>
-          <p className="mt-5 max-w-2xl text-lg text-ink-soft">Short answers to common questions about ghee. This page covers general information. Anything specific to Gheeji is clearly marked.</p>
+          <p className="mt-5 max-w-2xl text-lg text-ink-soft">Short answers to common questions about ghee. This page covers general information. Anything specific to Ghee Culture is clearly marked.</p>
         </div>
       </section>
 
@@ -44,8 +44,8 @@ export default function Learn() {
               <p>In August 2024, FSSAI issued an advisory asking food businesses to remove A1/A2 claims from milk and milk product labels, then withdrew it within days for further stakeholder consultation.<Ref id="fssai-a1a2-2024" /> If you see the term on a label, read it as a description of the milk source, not as a health claim.</p>
             </div>
             <aside className="mt-8 border-l-2 border-gold bg-paper p-5">
-              <p className="text-xs font-semibold uppercase tracking-[0.14em] text-brass">About Gheeji specifically</p>
-              <p className="mt-2 text-ink-soft">Details of Gheeji’s milk source, and how it is verified, will be published here once confirmed.</p>
+              <p className="text-xs font-semibold uppercase tracking-[0.14em] text-brass">About Ghee Culture specifically</p>
+              <p className="mt-2 text-ink-soft">Details of Ghee Culture’s milk source, and how it is verified, will be published here once confirmed.</p>
             </aside>
           </section>
 
@@ -60,7 +60,7 @@ export default function Learn() {
                 </div>
               ))}
             </dl>
-            <ArrowLink to={`/shop/${ghee.slug}#details`} className="mt-4">See Gheeji’s product information</ArrowLink>
+            <ArrowLink to={`/shop/${ghee.slug}#details`} className="mt-4">See Ghee Culture’s product information</ArrowLink>
           </section>
 
           <section id="methods" aria-labelledby="methods-title">
@@ -78,8 +78,8 @@ export default function Learn() {
               ))}
             </ol>
             <aside className="mt-8 border-l-2 border-gold bg-paper p-5">
-              <p className="text-xs font-semibold uppercase tracking-[0.14em] text-brass">About Gheeji specifically</p>
-              <p className="mt-2 text-ink-soft">These are general methods. Gheeji’s own production method has not yet been published and is not implied by this section.</p>
+              <p className="text-xs font-semibold uppercase tracking-[0.14em] text-brass">About Ghee Culture specifically</p>
+              <p className="mt-2 text-ink-soft">These are general methods. Ghee Culture’s own production method has not yet been published and is not implied by this section.</p>
             </aside>
           </section>
 
